@@ -13,7 +13,7 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            item = input("Enter item name to be added: ")
+            item = input("Enter the item to add: ")
             if item:
                 shopping_list.append(item)
                 print("Added!")
@@ -21,7 +21,7 @@ def main():
                 print("Invalid item name")
         elif choice == '2':
             # Prompt for and remove an item
-            item = input("Enter item name to be removed: ")
+            item = input("Enter the item to remove: ")
             try:
                 item_index = shopping_list.index(item)
                 del shopping_list[item_index]
